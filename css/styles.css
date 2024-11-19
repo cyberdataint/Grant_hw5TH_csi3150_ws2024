@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#filters {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#filters h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#filters label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+#filters input,
+#filters select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#filterButton,
+#clearButton {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#filterButton {
+  background-color: #3498db;
+  margin-bottom: 10px;
+}
+
+#filterButton:hover {
+  background-color: #2980b9;
+}
+
+#clearButton {
+  background-color: #e74c3c;
+}
+
+#clearButton:hover {
+  background-color: #c0392b;
+}
+
+#carListings h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cars-container {
+  display: grid;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#noResultsMessage {
+  text-align: center;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
